@@ -1,10 +1,12 @@
 import React from "react";
-import { Card, Button, Container, Row, Col, Badge } from 'react-bootstrap';
+import { Box, Image, VStack, WrapItem, HStack, Link} from "@chakra-ui/react";
+
+
 
 const Project = () => {
     
     const projectList = [
-        { name: '| Paint | Between the lines', deploy:"https://paint-between-lines.herokuapp.com/", link: 'https://github.com/jhugray/colouring', image:'https://user-images.githubusercontent.com/85147307/152003893-e56946e1-565f-4609-997b-1956f47ba182.png', subtitle:"React Colouring PSA PWA"},
+        { name: '| Paint | Between the lines', deploy:"https://paintbetweenthelines.herokuapp.com/colouring", link: 'https://github.com/jhugray/colouring', image:'https://user-images.githubusercontent.com/85147307/152003893-e56946e1-565f-4609-997b-1956f47ba182.png', subtitle:"React Colouring PSA PWA"},
         { name: 'Sputtle Music App', deploy:"https://music-battle-spotify.herokuapp.com/", link: 'https://github.com/azuryte5/music-battle-spotify', image:'https://user-images.githubusercontent.com/85147307/149671331-4c47a551-9024-4890-9f69-c198e5403845.png', subtitle:"Spotify API Music Battle MVC"},
         { name: 'Nutrivalue', deploy:"https://azuryte5.github.io/Nutrition-Sustenance-Value/", link: 'https://github.com/azuryte5/Nutrition-Sustenance-Value', image:'https://user-images.githubusercontent.com/85147307/149609594-266b3b58-5ad4-443a-a6cb-0da8a3ced07e.png', subtitle:"Front End Recipe and Map API"},
         { name: 'Tech it Ralph', deploy:"https://polar-sierra-45467.herokuapp.com/", link: 'https://github.com/azuryte5/Tech-It-Ralph', image:'https://user-images.githubusercontent.com/85147307/149609655-39cf6c72-7ecc-41f5-aa96-d8e4bec8cb99.png', subtitle:"MVC Tech Blog w auth"},
@@ -14,28 +16,23 @@ const Project = () => {
 
 ]    
     return (
-    <Container className="justify-content-md-center fluid applications block" >
-        <Row>
+    <>
     {projectList.map(project => {
     return (
-    <Col>
-    <Card className="bg-dark text-white fluid big-project" style={{ width: '20rem'}} border="success" key={project.name}>
-        <Card.Body>
-        <Card.Img src={project.image} alt="Card image" height="250rem" />
-            <Card.ImgOverlay> 
-            <Card.Title className="small-title">{project.name}</Card.Title>
-            <Badge bg="info">{project.subtitle}</Badge>
-            <Card.Subtitle></Card.Subtitle>
-            <Button variant="warning" href={project.deploy} className="small-project" target='_blank'>Deployed App</Button>
-            <Button variant="primary" href={project.link} className="small-project" target='_blank'>GitHub</Button>
-            </Card.ImgOverlay>
-        </Card.Body>
-    </Card>
-    </Col>
+    <WrapItem bg='#F8CAB4' key={project.name} borderRadius="20px">
+    <VStack w="20rem">
+        <Image src={project.image} alt="Card image" objectFit='cover' p={8} h='300px' objectPosition='left'/>
+            <Box>{project.name}</Box>
+            <Box>{project.subtitle}</Box>
+            <HStack p={4}>
+            <Link href={project.deploy} bg="#034F4F" color='#CDEDF6' target='_blank' _hover={{ color: '#413C58', bg:'#CDEDF6' }} borderRadius="10px" p={1}>Deployed App</Link>
+            <Link href={project.link} bg="#034F4F" color='#CDEDF6' target='_blank'_hover={{ color: '#413C58', bg:'#CDEDF6' }}borderRadius="10px" p={1}>GitHub</Link>
+            </HStack>
+    </VStack>
+    </WrapItem>
     )})
     }
-    </Row>
-    </Container>
+    </>
     )
 }
 

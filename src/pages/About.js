@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Wrap, Image, VStack } from "@chakra-ui/react"
 
 const About = () => (
-  <Wrap color='#CDEDF6' bg='#034F4F' flexWrap>
+  <Wrap color='#CDEDF6' bg='#034F4F' flexWrap p={20}>
       <Box boxSize='sm' bg='#F8CAB4'>
         <Image
           alt="Man with cool classes"

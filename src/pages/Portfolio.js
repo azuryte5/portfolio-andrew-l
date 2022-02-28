@@ -1,10 +1,14 @@
+import { Center, Wrap } from "@chakra-ui/react";
 import React from "react";
 import Project from "../components/Project";
 
+
 const Portfolio = () => (
-  <div>
+  <Center >
+  <Wrap spacing='100px' align='center' justify='center'>
   <Project></Project>
-  </div>
+  </Wrap>
+  </Center>
 );
 
 export default Portfolio;
