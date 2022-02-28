@@ -1,34 +1,20 @@
-import React from 'react'
-import { Navbar, Container} from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Box, HStack, Link, Spacer } from "@chakra-ui/react";
+import React from "react";
+
+import { Link as Route} from "react-router-dom"
 
 function Nav() {
-
-return (
-<Navbar className='navbar' collapseOnSelect expand="lg" variant="dark">
-  <Container>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-  <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/about">
-              About
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/portfolio">
-              Portfolio
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/resume">
-              Resume
-            </Link>
-          </li>
-        </ul>
-  </Navbar.Collapse>
-  </Container>
-</Navbar>
-)}
+  return (
+    <Box p={3} bg="#413C58" color='#CDEDF6'>
+      <HStack>
+        <Link href="https://github.com/azuryte5" isExternal>Andrew Lefebvre</Link>
+        <Spacer />
+        <Link as={Route} to="/about">About</Link>
+        <Link as={Route} to="/portfolio">Portfolio</Link>
+        <Link as={Route} to="/resume">Resume</Link>
+      </HStack>
+    </Box>
+  );
+}
 
 export default Nav;
