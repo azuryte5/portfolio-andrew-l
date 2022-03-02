@@ -45,7 +45,7 @@ function Resume() {
     ]}>
       <Container
         maxW="xl"
-        bg="#034F4F"
+        bg="#3b83d0"
         color="#CDEDF6"
         centerContent
         p={2}
@@ -68,7 +68,7 @@ function Resume() {
         <WrapItem>
           <Container
             maxW="sm"
-            bg="#034F4F"
+            bg="#3b83d0"
             color="#CDEDF6"
             p={4}
             borderRadius={30}
@@ -90,7 +90,7 @@ function Resume() {
         <WrapItem>
           <Container
             maxW="sm"
-            bg="#034F4F"
+            bg="#3b83d0"
             color="#CDEDF6"
             p={4}
             borderRadius={30}
@@ -112,7 +112,7 @@ function Resume() {
         <WrapItem>
           <Container
             maxW="sm"
-            bg="#034F4F"
+            bg="#3b83d0"
             color="#CDEDF6"
             p={4}
             borderRadius={30}

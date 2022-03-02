@@ -6,14 +6,8 @@ import {
   useDisclosure,
   IconButton,
   Stack,
-  MenuDivider,
-  MenuItem,
-  Button,
   Avatar,
-  MenuList,
   Flex,
-  Menu,
-  MenuButton,
 } from "@chakra-ui/react";
 import React from "react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -25,47 +19,53 @@ function Nav() {
   return (
     <Box
       p={3}
-      bg="#413C58"
+      bg="#3b83d0"
       color="#CDEDF6"
       zIndex={200}
       w="full"
       position="fixed"
-      fontSize={30}
     >
       <Flex h={16} justify={'start'} alignItems={'center'}>
-      <Avatar
-              size={"lg"}
-              src={"https://user-images.githubusercontent.com/85147307/149609585-ea0a0e3b-1bd0-4b0f-b862-e58514787bfd.jpg"
-              }/>
           <Link
             href="https://github.com/azuryte5"
             isExternal
-            borderRadius="20px"
-            p={1}
+            paddingY={2} paddingX={5}
             fontSize={'2xl'}
-          >
+            bg={'#EAF7FF60'}
+            color={'black'}
+            boxShadow='dark-lg'
+            borderRadius={'3px'}
+          >   
+          <Avatar
+          size={"lg"}
+          src={"https://user-images.githubusercontent.com/85147307/149609585-ea0a0e3b-1bd0-4b0f-b862-e58514787bfd.jpg"}
+          alt={'Male face slightly looking right with rainbow tint glasses'}
+          />
             Andrew Lefebvre
           </Link>
         <Spacer />
-        <HStack as={"nav"} display={{ base: 'none', md: 'flex' }} >
-          <Link as={Route} to="/" border="dashed" borderRadius="20px" p={1}>
+        <HStack as={"nav"} display={{ base: 'none', md: 'flex' }} spacing='10px'>
+          <Link as={Route} to="/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg'>
             About
           </Link>
           <Link
             as={Route}
             to="/portfolio"
-            border="dashed"
+            border="solid"
             borderRadius="20px"
-            p={1}
+            paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
+            fontSize={'2xl'}
+            boxShadow='dark-lg'
           >
             Portfolio
           </Link>
           <Link
             as={Route}
             to="/resume"
-            border="dashed"
+            border="solid"
             borderRadius="20px"
-            p={1}
+            paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
+            fontSize={'2xl'} boxShadow='dark-lg'
           >
             Experience
           </Link>
@@ -78,49 +78,34 @@ function Nav() {
           display={{ md: "none" }}
           onClick={isOpen ? onClose : onOpen}
         />
-      <Flex alignItems={"center"}>
-        <Menu>
-          <MenuButton
-            as={Button}
-            rounded={"full"}
-            variant={"link"}
-            cursor={"pointer"}
-            minW={0}>
-            
-          </MenuButton>
-          <MenuList>
-            <MenuItem>Link 1</MenuItem>
-            <MenuItem>Link 2</MenuItem>
-            <MenuDivider />
-            <MenuItem>Link 3</MenuItem>
-          </MenuList>
-        </Menu>
-      </Flex>
       </Flex>
       {isOpen ? (
-        <Box pb={4} display={{ md: "none" }}>
-          <Stack as={"nav"} spacing={4}>
-            <Link as={Route} to="/" border="dashed" borderRadius="20px" p={1}>
-              About
-            </Link>
-            <Link
-              as={Route}
-              to="/portfolio"
-              border="dashed"
-              borderRadius="20px"
-              p={1}
-            >
-              Portfolio
-            </Link>
-            <Link
-              as={Route}
-              to="/resume"
-              border="dashed"
-              borderRadius="20px"
-              p={1}
-            >
-              Experience
-            </Link>
+        <Box p={6} display={{ md: "none" }} >
+          <Stack as={"nav"} spacing={8} w={'80%'} justify="center">
+          <Link as={Route} to="/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg'>
+            About
+          </Link>
+          <Link
+            as={Route}
+            to="/portfolio"
+            border="solid"
+            borderRadius="20px"
+            paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
+            fontSize={'2xl'}
+            boxShadow='dark-lg'
+          >
+            Portfolio
+          </Link>
+          <Link
+            as={Route}
+            to="/resume"
+            border="solid"
+            borderRadius="20px"
+            paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
+            fontSize={'2xl'} boxShadow='dark-lg'
+          >
+            Experience
+          </Link>
           </Stack>
         </Box>
       ) : null}

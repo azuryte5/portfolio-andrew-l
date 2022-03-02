@@ -3,7 +3,7 @@ import { Box, Link, HStack } from "@chakra-ui/react";
 
 function Footer() {
   return (
-    <Box bg={'#413C58'} color={'#CDEDF6'} p={4}>
+    <Box bg={'#3b83d0'} color={'#CDEDF6'} p={4}>
           Contact Information
            
           <HStack justify={'center'} p={3}>
