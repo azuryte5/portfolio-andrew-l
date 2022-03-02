@@ -1,60 +1,21 @@
 import React from "react";
-import { Accordion, Container } from "react-bootstrap";
+import { Box, Link, HStack } from "@chakra-ui/react";
 
 function Footer() {
   return (
-    <section className="builder">
-      <div className="contact">
-        <Accordion>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>Contact Information</Accordion.Header>
-            <Accordion.Body>
-            <Container fluid>
-            <ul>
-          <li>
-            <a href="https://www.canada411.ca/" target="_blank">
-              *RE-DAC-TED*
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/" target="_blank">
-              and2lefebvre@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/azuryte5" target="_blank">
-              Github
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/azuryte__5?lang=en" target="_blank">
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/andrew-lefebvre-7a7167213"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="https://www.spotify.com/us/" target="_blank">
-              Spotify
-            </a>
-          </li>
-        </ul>
-        </Container>
-            </Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
-  
+    <Box bg={'#413C58'} color={'#CDEDF6'} p={4}>
+          Contact Information
+           
+          <HStack justify={'center'} p={3}>
+          <Link href="https://www.google.com/" isExternal border='dashed' borderRadius='20px' p={1} >G-mail</Link>
+          <Link href="https://github.com/azuryte5"  isExternal border='dashed' borderRadius='20px' p={1} >Github</Link>
+          <Link href="https://twitter.com/azuryte__5?lang=en"  isExternal border='dashed' borderRadius='20px' p={1} >Twitter</Link>
+          <Link href="https://www.linkedin.com/in/andrew-lefebvre-7a7167213"  isExternal border='dashed' borderRadius='20px' p={1} >LinkedIn</Link>
+        </HStack>
         <div className="justify-center">
           &copy;{new Date().getFullYear()} by Azuryte
         </div>
-      </div>
-    </section>
+    </Box>
   );
 }
 export default Footer;

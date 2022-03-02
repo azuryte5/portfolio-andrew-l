@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Wrap, Image, VStack, WrapItem, useMediaQuery } from "@chakra-ui/react"
+import { Text, Wrap, Image, VStack, WrapItem, useMediaQuery, Center } from "@chakra-ui/react"
 
 
 
@@ -19,18 +19,21 @@ function About() {
     'linear(to-t, #CDEDF6, #413C58)',
   ]} 
   spacing='30px' justify='center'
-  flexWrap paddingTop={24} paddingBottom={40}>
-      <WrapItem boxSize='sm' bg='#034F4F' borderRadius={25} boxShadow='dark-lg'>
+  flexWrap paddingTop={24} paddingBottom={30}>
+      <WrapItem boxSize='sm' bg='#034F4F' borderRadius={30} boxShadow='dark-lg'>
         <Image
-          alt="Man with cool classes"
+          alt="Man with cool glasses"
           src="https://user-images.githubusercontent.com/85147307/149609585-ea0a0e3b-1bd0-4b0f-b862-e58514787bfd.jpg" 
-          borderRadius='50rem'
+          borderRadius='40%'
           objectFit='contain'
           boxSize='sm'   
         />
       </WrapItem>
 
-    <WrapItem bg='#034F4F' color='#F8CAB4' fontSize={20} borderRadius={25} fontWeight='900' p={5} h={20} boxShadow='dark-lg'>About Andrew</WrapItem>
+    <WrapItem> 
+      <Center bg='#034F4F' color='#F8CAB4' fontSize={20} borderRadius={25} fontWeight='900' p={5} h={20} boxShadow='dark-lg'>
+      About Andrew </Center>
+      </WrapItem>
 
     <WrapItem bg='#034F4F' color='#F8CAB4' fontSize='1.2rem' borderRadius={25} p={6} boxShadow='dark-lg' w={determineWidth}>
       <VStack p={4}>
