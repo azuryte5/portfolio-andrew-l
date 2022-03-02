@@ -52,12 +52,12 @@ function Resume() {
         borderRadius={30}
         boxShadow='dark-lg'
       >
-        <Heading>Resume</Heading>
+        <Heading>Technical skills</Heading>
         <Box padding="4" maxW="3xl">
           Click on button below to view my resume. Please also view my
           Proficiencies below
         </Box>
-        <Box fontSize={"lg"} border={'4px solid'} bg={"#CDEDF6"} color={'#034F4F'}  _hover={{ color: '#413C58', bg:'#CDEDF6', border:'4px dashed'}}> 
+        <Box borderRadius='10px' fontSize={"xl"} border={'4px solid'} bg={"#CDEDF6"} color={'#034F4F'}  _hover={{ color: '#413C58', bg:'#CDEDF6', border:'4px dashed'}}> 
           <a href={resume} download="Resume.pdf">
             Download
           </a>
@@ -74,7 +74,7 @@ function Resume() {
             borderRadius={30}
             boxShadow='dark-lg'
           >
-            <Heading p={2}>Front-End Proficiencies</Heading>
+            <Heading p={2}>Front end</Heading>
             <List spacing={3} alignItems="left">
               {listFront.map((front) => {
                 return (
@@ -96,7 +96,7 @@ function Resume() {
             borderRadius={30}
             boxShadow='dark-lg'
           >
-            <Heading p={2}>Back-End Proficiencies</Heading>
+            <Heading p={2}>Backend</Heading>
             <List spacing={3} alignItems="left">
               {listBack.map((back) => {
                 return (
@@ -117,8 +117,9 @@ function Resume() {
             p={4}
             borderRadius={30}
             boxShadow='dark-lg'
+            
           >
-            <Heading p={2}>Other Proficiencies</Heading>
+            <Heading p={2}>Other</Heading>
             <List spacing={3} alignItems="left">
               {tools.map((tool) => {
                 return (
