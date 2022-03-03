@@ -11,6 +11,7 @@ Andrew Lefebvre
 The URL of the GitHub repository: https://github.com/azuryte5/portfolio-andrew-l
 
 The link to the deployed portfolio: https://azuryte5.github.io/portfolio-andrew-l
+
 -----
 ## Usage
 Full stack web developer with experience in demonstrating creative solutions to improve accessibility and functionality. Successfully bridged in-person problem solving skills to a digital landscape. Augmented previous knowledge to incorporate new technologies and research in projects. Empathetic, open minded and personable communicator ready to implement solutions.
