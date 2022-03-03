@@ -14,9 +14,9 @@ function About() {
   return (
   <Wrap
   bg={'#9fcbe5'} 
-  spacing='20px' justify='center'
+  spacing='20px' 
+  justify='center'
   flexWrap paddingTop={24} paddingBottom={20}
-  w='100%'
   >
       <WrapItem boxSize='sm' justifyContent={'center'} alignItems={'center'}>
         <Image

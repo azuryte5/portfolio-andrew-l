@@ -22,10 +22,10 @@ function Nav() {
       bg="#3b83d0"
       color="#CDEDF6"
       zIndex={200}
-      w="full"
+      w="100%"
       position="fixed"
     >
-      <Flex h={16} justify={'start'} alignItems={'center'}>
+      <Flex h={16} justify={'start'} align='center'>
           <Link
             href="https://github.com/azuryte5"
             isExternal
