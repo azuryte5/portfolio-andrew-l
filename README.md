@@ -10,7 +10,7 @@ Andrew Lefebvre
 ## Links
 The URL of the GitHub repository: https://github.com/azuryte5/portfolio-andrew-l
 
-The link to the deployed portfolio: https://azuryte5.github.io
+The link to the deployed portfolio: https://azuryte5.github.io/portfolio-andrew-l
 
 -----
 ## Usage
