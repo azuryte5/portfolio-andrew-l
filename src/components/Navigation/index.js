@@ -45,7 +45,7 @@ function Nav() {
           </Link>
         <Spacer />
         <HStack as={"nav"} display={{ base: 'none', md: 'flex' }} spacing='10px'>
-          <Link as={Route} to="/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg'>
+          <Link as={Route} to="/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg' _hover={{ color: 'black', bg:'#FACF7E' }}>
             About
           </Link>
           <Link
@@ -56,6 +56,7 @@ function Nav() {
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
             fontSize={'2xl'}
             boxShadow='dark-lg'
+            _hover={{ color: 'black', bg:'#FACF7E' }}
           >
             Portfolio
           </Link>
@@ -66,6 +67,7 @@ function Nav() {
             borderRadius="20px"
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
             fontSize={'2xl'} boxShadow='dark-lg'
+            _hover={{ color: 'black', bg:'#FACF7E' }}
           >
             Experience
           </Link>

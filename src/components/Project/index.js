@@ -21,13 +21,15 @@ const Project = () => {
     return (
     <WrapItem bg='#3b83d0' key={project.name} borderRadius="20px" boxShadow='dark-lg'>
     <VStack w="25rem">
-        <Image src={project.image} alt="Card image" objectFit='contain' p={8} h='300px' objectPosition='center'/>
-            <Text color={'#034F4F'} fontSize='3xl'>{project.name}</Text>
-            <Tag bg={'#CDEDF6'} variant='outline' color={'#034F4F'} fontSize='2xl'>{project.subtitle}</Tag>
-            <Text color={'#034F4F'} >Here is where I put some extra text describing in one sentence what I made.</Text>
+        <Image src={project.image} alt="Card image" objectFit='contain' p={8} h='250px' objectPosition='center'/>
+            <Text fontSize='3xl'>{project.name}</Text>
+            <Tag bg={'#CDEDF6'} variant='outline' fontSize='2xl'>{project.subtitle}</Tag>
+            <Text >Here is where I put some extra text describing in one sentence what I made.</Text>
             <HStack p={4}>
-            <Link href={project.deploy} color={'black'} bg={'#ffb833'} target='_blank' _hover={{ color: 'black', bg:'#ffb833' }} borderRadius="10px" p={3}>Deployed App</Link>
-            <Link href={project.link} color={'black'} bg={'#ffb833'} target='_blank'_hover={{ color: '#413C58', bg:'#CDEDF6' }}borderRadius="10px" p={3}>GitHub</Link>
+            <Link href={project.deploy} paddingY={3} paddingX={6} color={'black'} bg={'#ffb833'} target='_blank' _hover={{ color: 'black', bg:'#FACF7E' }} borderRadius="10px" fontSize={'xl'}
+            boxShadow='dark-lg'>Deployed App</Link>
+            <Link href={project.link} paddingY={3} paddingX={6} color={'black'} bg={'#ffb833'} target='_blank'_hover={{ color: '#413C58', bg:'#FACF7E' }}borderRadius="10px" fontSize={'xl'}
+            boxShadow='dark-lg'>GitHub</Link>
             </HStack>
     </VStack>
     </WrapItem>
