@@ -84,7 +84,7 @@ function Nav() {
       {isOpen ? (
         <Box p={6} display={{ md: "none" }} >
           <Stack as={"nav"} spacing={8} w={'80%'} justify="center">
-          <Link as={Route} to="portfolio-andrew-l/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg'>
+          <Link as={Route} to="portfolio-andrew-l/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg' onClick={isOpen ? onClose : onOpen}>
             About
           </Link>
           <Link
@@ -95,6 +95,7 @@ function Nav() {
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
             fontSize={'2xl'}
             boxShadow='dark-lg'
+            onClick={isOpen ? onClose : onOpen}
           >
             Portfolio
           </Link>
@@ -105,6 +106,7 @@ function Nav() {
             borderRadius="20px"
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
             fontSize={'2xl'} boxShadow='dark-lg'
+            onClick={isOpen ? onClose : onOpen}
           >
             Experience
           </Link>

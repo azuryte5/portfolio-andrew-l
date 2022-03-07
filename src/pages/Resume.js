@@ -172,7 +172,7 @@ function Resume() {
             border="solid"
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
             boxShadow='dark-lg'
-            w={'20%'}
+            w='auto'
             _hover={{ color: 'black', bg:'#FACF7E' }}
             > 
           <Link href={resume} download="Resume.pdf">
