@@ -15,9 +15,9 @@ function App() {
     <BrowserRouter>
     <Nav />
       <Routes>
-        <Route  path="/" element={<About/>}/>
-        <Route  path='/portfolio' element={<Portfolio/>}/>
-        <Route  path='/resume' element={<Resume/>}/> 
+        <Route  path="portfolio-andrew-l/" element={<About/>}/>
+        <Route  path='portfolio-andrew-l/portfolio' element={<Portfolio/>}/>
+        <Route  path='portfolio-andrew-l/resume' element={<Resume/>}/> 
       </Routes>
     </BrowserRouter>
     <Footer />

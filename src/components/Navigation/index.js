@@ -45,12 +45,12 @@ function Nav() {
           </Link>
         <Spacer />
         <HStack as={"nav"} display={{ base: 'none', md: 'flex' }} spacing='10px'>
-          <Link as={Route} to="/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg' _hover={{ color: 'black', bg:'#FACF7E' }}>
+          <Link as={Route} to="portfolio-andrew-l/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg' _hover={{ color: 'black', bg:'#FACF7E' }}>
             About
           </Link>
           <Link
             as={Route}
-            to="/portfolio"
+            to="portfolio-andrew-l/portfolio"
             border="solid"
             borderRadius="20px"
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
@@ -62,7 +62,7 @@ function Nav() {
           </Link>
           <Link
             as={Route}
-            to="/resume"
+            to="portfolio-andrew-l/resume"
             border="solid"
             borderRadius="20px"
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
@@ -84,27 +84,29 @@ function Nav() {
       {isOpen ? (
         <Box p={6} display={{ md: "none" }} >
           <Stack as={"nav"} spacing={8} w={'80%'} justify="center">
-          <Link as={Route} to="/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg'>
+          <Link as={Route} to="portfolio-andrew-l/" border="solid" borderRadius="20px" paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'} fontSize={'2xl'} boxShadow='dark-lg' onClick={isOpen ? onClose : onOpen}>
             About
           </Link>
           <Link
             as={Route}
-            to="/portfolio"
+            to="portfolio-andrew-l/portfolio"
             border="solid"
             borderRadius="20px"
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
             fontSize={'2xl'}
             boxShadow='dark-lg'
+            onClick={isOpen ? onClose : onOpen}
           >
             Portfolio
           </Link>
           <Link
             as={Route}
-            to="/resume"
+            to="portfolio-andrew-l/resume"
             border="solid"
             borderRadius="20px"
             paddingY={2} paddingX={6} color={'black'} bg={'#ffb833'}
             fontSize={'2xl'} boxShadow='dark-lg'
+            onClick={isOpen ? onClose : onOpen}
           >
             Experience
           </Link>
