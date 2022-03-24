@@ -17,8 +17,8 @@ function Footer() {
           p={2}
           fontSize={"2xl"}
           fontWeight='200'
-          _hover={{fontWeight:'bold'}}
-          _focus={{fontWeight:'bold'}}
+          _hover={{bg:"#9fcbe5"}}
+          _focus={{bg:"#9fcbe5"}}
         >
         <EmailIcon/>
         G-mail
@@ -31,8 +31,8 @@ function Footer() {
           p={1}
           fontSize={"2xl"}
           fontWeight='200'
-          _hover={{fontWeight:'bold'}}
-          _focus={{fontWeight:'bold'}}
+          _hover={{bg:"#9fcbe5"}}
+          _focus={{bg:"#9fcbe5"}}
         >
           <DiGithubBadge />
           Github
@@ -52,8 +52,8 @@ function Footer() {
           fontSize={"2xl"}
           // boxShadow="dark-lg"
           fontWeight='200'
-          _hover={{fontWeight:'bold'}}
-          _focus={{fontWeight:'bold'}}
+          _hover={{bg:"#9fcbe5"}}
+          _focus={{bg:"#9fcbe5"}}
         >
           <FaTwitterSquare />
           Twitter
@@ -73,8 +73,8 @@ function Footer() {
           fontSize={"2xl"}
           // boxShadow="dark-lg"
           fontWeight='200'
-          _hover={{fontWeight:'bold'}}
-          _focus={{fontWeight:'bold'}}
+          _hover={{bg:"#9fcbe5"}}
+          _focus={{bg:"#9fcbe5"}}
         >
           <AiFillLinkedin />
           LinkedIn
